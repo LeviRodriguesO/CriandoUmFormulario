@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Form</h1>
+
+    <h2>O que é um Form:</h2>
+
+    <p>A tag <code>&lt;form&gt;&lt;/form&gt;</code>(formulário) é utilizada para agrupar elementos interartivos. Nela o usuário vai inserir insformações que serão enviadas ao servidor.</p>
+
+    <ol>
+        <li>Form (formulário)</li>
+        <li>Label (etiqueta)</li>
+        <li>Input (entrada)</li>
+        <li>Button (botão)</li>
+    </ol>
+
+    <ul>
+        <li>Primeiro crie a tag form que será responsável por agrupar todos os campos e buttons que iremos usar: <code>&lt;form&gt; Conteúdo &lt;/form&gt;</code> 
+        </li>
+        <li>
+            Agora criamos uma tag label que é usada como legenda para a tag input que vamos usar: <code>&lt;label& for="name"&gt; Nome &lt;/label&gt;</code>
+        </li>
+    </ul>
+
+    <pre>
+     <code>
+     &lt;form&gt;
+       First Name: &lt;input type="text" name="FirstName"&gt;  
+        &lt;br&gt;
+       Last Name: &lt;input type="text" name="LastName"&gt;       
+     &lt;/form&gt;
+     </code>
+    </pre>
+
+    <form>
+        First Name: <input type="text" name="FirstName">
+        <br>
+        Last Name: <input type="text" name="LastName">
+    </form>
+
+    <h2>Input</h2>
+
+    <p>A tag input é como criamos o campo onde o usuário irá digitar as informações, esse campo pode ser de diferentes tipos: text, email, password. O input pode carregar vários atributos.</p>
+
+    <ul>
+        <li>type: O tipo de atributo.</li>
+        <li>name: O nome dado ao input.</li>
+        <li>id: A identificação do input.</li>
+        <li>placeholder: o texto.</li>
+    </ul>
+
+    <p><code>&lt;input type="text" name="name" placeholder="Digite seu nome"&gt;</code></p>
+
+    <form>
+        <label for="name">Nome:</label>
+        <input type="text" name="name" placeholder="Digite seu nome">
+     <br>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Escreva o seu nome">
+     <br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Escreva o seu E-mail">
+    
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" placeholder="Coloque a sua senha">
+
+        <label for="aluno">Aluno vai na web:</label>
+
+        <input type="radio" value="sim" id="sim" name="aluno">
+        <label for="sim">Sim</label>
+
+        <input type="radio" value="nao" id="nao" name="aluno">
+        <label for="nao">Não</label>
+        <br>
+        <label for="batata">Tipos de Batatas:</label>
+
+        <input type="checkbox" id="frita" name="frita" checked>
+        <label for="frita">Batata Frita</label>
+
+        <input type="checkbox" id="assado" name="assado">
+        <label for="assado">Batata Assada</label>
+
+        <input type="checkbox" id="marechal" name="marechal">
+        <label for="marechal">Batata de Marechal</label>
+    </form>
+
+    <h3>Input="text"</h3>
+    <p>Cria um input onde pode ser adicionado texto</p>
+    <pre>
+    <code>
+    &lt;label for="name"&gt;Name&lt;/label&gt;
+    &lt;input id="name" type="text" name="name" placeholder="Escreva o seu nome"&gt;
+    </code>
+    </pre>
+
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" placeholder="Digite seu nome">
+
+    <h3>Input="email"</h3>
+    <p>Cria um input usado exclusivamente para email</p>
+    <pre>
+    <code>
+    &lt;label for="email"&gt;E-mail&lt;/label&gt;
+    &lt;input id="email" type="email" name="email" placeholder="Escreva o seu E-mail"&gt;
+    </code>
+    </pre>
+
+    <label for="email">E-email:</label>
+    <input type="email" id="email" name="email" placeholder="Digite seu E-mail">
+
+    <h3>Input="number"</h3>
+    <p>Cria um input exclusivamente para números</p>
+    <pre>
+    <code>
+    &lt;label for="numero"&gt;Idade:&lt;/label&gt;
+    &lt;input type="number" id="numero" name="numero" placeholder="Escreva sua idade"&gt;
+    </code>
+    </pre>
+
+    <label for="numero">Idade:</label>
+    <input type="number" id="numero" name="numero" placeholder="Digite sua idade">
+
+    <h3>Input="password"</h3>
+    <p>Cria um input onde pode ser adicionado senhas</p>
+    <pre>
+    <code>
+    &lt;label for="senha"&gt;Senha:&lt;/label&gt;
+    &lt;input type="password" id="senha" name="senha" placeholder="Escreva o sua senha"&gt;
+    </code>
+    </pre>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+    <h3>Input="radio"</h3>
+    <p>Cria um input onde pode ser selecionado uma opção.</p>
+    <pre>
+    <code>
+    &lt;label for="aluno"&gt;Aluno vai na web&lt;/label&gt;
+
+    &lt;input type="radio" id="sim" name="aluno"&gt;
+    &lt;label for="sim"&gt;Sim&lt;/label&gt;
+
+    &lt;input type="radio" id="nao" name="aluno"&gt;
+    &lt;label for="nao"&gt;Não&lt;/label&gt;
+    </code>
+    </pre>
+
+    <label for="aluno">Aluno VNW:</label>
+    
+    <input type="radio" name="aluno" id="Sim">
+    <label for="Sim">Sim</label>
+
+    <input type="radio" name="aluno" id="nao">
+    <label for="nao">Não</label>
+
+    
+    <h3>Input="checkbox"</h3>
+    <p>Cria um input onde pode ser selecionado uma ou mais opções.</p>
+    <pre>
+    <code>
+    &lt;label for="batatas"&gt;Tipos de Batatas:&lt;/label&gt;
+
+    &lt;input type="checkbox" id="frita" name="frita"&gt;
+    &lt;label for="fita"&gt;Batata frita&lt;/label&gt;
+
+    &lt;input type="checkbox" id="assada" name="assada"&gt;
+    &lt;label for="assada"&gt;Batata Assada&lt;/label&gt;
+
+    &lt;input type="checkbox" id="marechal" name="marechal"&gt;
+    &lt;label for="marechal"&gt;Batata de Marechal&lt;/label&gt;
+    </code>
+    </pre>
+
+    <label for="Batata">Tipos de Batatas:</label>
+
+    <input type="checkbox" id="frita" name="frita">
+    <label for="fita">Batata Frita</label>
+
+    
+    <input type="checkbox" id="assada" name="assada">
+    <label for="assada">Batata Assada</label>
+
+    
+    <input type="checkbox" id="marechal" name="marechal">
+    <label for="marechal">Batata de Marechal</label>
+</body>
+</html>
