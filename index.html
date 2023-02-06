@@ -11,7 +11,7 @@
 
     <h2>O que é um Form:</h2>
 
-    <p>A tag <code>&lt;form&gt;&lt;/form&gt;</code>(formulário) é utilizada para agrupar elementos interartivos. Nela o usuário vai inserir insformações que serão enviadas ao servidor.</p>
+    <p>A tag <code>&lt;form&gt;&lt;/form&gt;</code>(formulário) é utilizada para agrupar elementos interativos. Nela o usuário vai inserir insformações que serão enviadas ao servidor.</p>
 
     <ol>
         <li>Form (formulário)</li>
@@ -20,13 +20,13 @@
         <li>Button (botão)</li>
     </ol>
 
-    <ul>
+    <ol>
         <li>Primeiro crie a tag form que será responsável por agrupar todos os campos e buttons que iremos usar: <code>&lt;form&gt; Conteúdo &lt;/form&gt;</code> 
         </li>
         <li>
-            Agora criamos uma tag label que é usada como legenda para a tag input que vamos usar: <code>&lt;label& for="name"&gt; Nome &lt;/label&gt;</code>
+            Agora criamos uma tag label que é usada como legenda para a tag input que vamos usar: <code>&lt;label&gt; for="name"&gt; Nome &lt;/label&gt;</code>
         </li>
-    </ul>
+    </ol>
 
     <pre>
      <code>
@@ -59,10 +59,7 @@
 
     <form>
         <label for="name">Nome:</label>
-        <input type="text" name="name" placeholder="Digite seu nome">
-     <br>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Escreva o seu nome">
+        <input type="text" id="name" name="name" placeholder="Digite seu nome">
      <br>
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" placeholder="Escreva o seu E-mail">
@@ -168,7 +165,7 @@
     &lt;label for="batatas"&gt;Tipos de Batatas:&lt;/label&gt;
 
     &lt;input type="checkbox" id="frita" name="frita"&gt;
-    &lt;label for="fita"&gt;Batata frita&lt;/label&gt;
+    &lt;label for="frita"&gt;Batata frita&lt;/label&gt;
 
     &lt;input type="checkbox" id="assada" name="assada"&gt;
     &lt;label for="assada"&gt;Batata Assada&lt;/label&gt;
@@ -181,7 +178,7 @@
     <label for="Batata">Tipos de Batatas:</label>
 
     <input type="checkbox" id="frita" name="frita">
-    <label for="fita">Batata Frita</label>
+    <label for="frita">Batata Frita</label>
 
     
     <input type="checkbox" id="assada" name="assada">
@@ -190,5 +187,15 @@
     
     <input type="checkbox" id="marechal" name="marechal">
     <label for="marechal">Batata de Marechal</label>
+
+    <h3>Input="submit"</h3>
+
+    <pre>
+    <code>
+    &lt;input type="submit" value="Enviar"&gt;
+    </code>
+    </pre>
+
+    <input type="submit" value="Enviar">
 </body>
 </html>
